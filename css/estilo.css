@@ -1,0 +1,325 @@
+/*
+Elementos de CSS
+reglas: conjunto de un selector, declaraciones, propiedades y valores
+selectores: 
+    pueden ser
+    -selector de etiqueta: header 'o' footer
+    -selector descendente: body header div nav ol a { }
+    -selector de clase: .nombreClase { }
+    -selector de id: #nombreId { }
+declaraciones:
+    es todo lo que esta adentro de las llaves { }
+    estan compuestas de propiedades y valores que se separan con ;
+propiedades
+valores
+*/
+
+/* font-family: 'Bebas Neue', cursive;
+font-family: 'Roboto Condensed', sans-serif; */
+
+/*
+PROPIEDADES PARA LOS TEXTOS
+font-family: define el tipo de fuente aplicado al texto.
+color: define el colore del texto.
+line-height: define la altura desde la base del texto hasta la base de la siguiente línea de texto.
+font-size: define el tamaño del texto, admite cualquiera de las unidades de medida disponibles.
+letter-spacing: define el espaciado entre las letras del texto.
+font-weight: define el ““peso”” de la letra, negrita, normal, light y normalmente se indica en múltiplos de 100 o usando keywords.
+text-decoration: define el decorado del texto como subrayado, tachado, con subrayado superior, etc.
+text-transform: permite transformar el estado de mayúsculas / minúsculas en el texto, usando uppercase para mayúsculas sostenidas, lowercase para minúsculas sostenidas, etc.
+*/
+
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+    margin: 0px;
+    background: lightskyblue;
+}
+
+
+.header {
+    background-color: #08022B;
+    color: white;
+    display: flex;
+    height: 80px;
+    justify-content: space-between;
+}
+
+ol,
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+figure {
+    margin: 0;
+}
+
+.header a {
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.menu {
+    height: inherit;
+}
+
+.header ol {
+    display: flex;
+    height: inherit;
+}
+
+.header ol li {
+    height: inherit;
+}
+
+.header a {
+    display: flex;
+    align-items: center;
+    height: inherit;
+    padding: 0 15px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Bebas Neue', cursive;
+    font-weight: 300;
+}
+
+h1 {
+    font-size: 40px;
+    line-height: 1.5;
+    letter-spacing: 1.5px;
+    color: white;
+    margin: 0;
+}
+
+h1 strong {
+    color: #026fff;
+}
+
+.hero {
+    background: #08022B;
+    padding-bottom: 20px;
+    
+}
+
+.hero-title {
+    height: 350px;
+    /* background-image: url('../img/logo.jpg'); */
+    background-color: #08022B;
+    /* background-size: 263px; */
+    /* background-repeat: no-repeat;
+    background-position-x: right; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero-image {
+    object-fit: cover;
+}
+
+.hero-description {
+    padding: 0 20px;
+}
+
+.hero-description-text {
+    border: 1px solid gray;
+    border-radius: 10px;
+    background: white;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 0 20px;
+}
+
+.hero-description-text p {
+    margin: 20px 0;
+}
+
+h2 {
+    color: #026fff;
+    text-transform: uppercase;
+    font-family: 'Titan One', cursive;
+    font-size: 33px;
+    margin: 0;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    vert
+}
+
+.portfolio {
+    padding: 0 20px;
+}
+
+.project {
+    border: 1px solid gray;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    padding: 20px;
+    background: white;
+    /* box-sizing: border-box; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.project-details {
+    width: 500px;
+}
+
+.project-title {
+    font-size: 35px;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.project-course {
+    font-size: 20px;
+    margin: 0;
+}
+
+.project-date,
+.project-url,
+.project-description {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.project strong {
+    font-family: 'Bebas Neue', cursive;
+    font-weight: lighter;
+}
+
+.project-description {
+    font-weight: 600;
+}
+
+.h2-list {
+    margin-left: 20px;
+}
+
+.personal-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.personal {
+    margin: 20px;
+    width: 460px;
+    border-radius: 10px;
+    overflow: hidden;
+    flex-shrink: 0;
+    background: #d2e9f0;
+}
+
+.personal-image {
+    width: 460px;
+    height: 250px;
+    object-fit: cover;
+}
+
+.personal-details {
+    margin: 20px 40px;
+    margin-top: -40px;
+    background-color: white;
+    position: relative;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.personal-description {
+    text-align: justify;
+}
+
+.personal-url {
+    font-weight: bold;
+    color: #026fff;
+    border: 1px solid #026fff;    
+    padding: 5px 20px;
+    text-decoration: none;
+}
+
+.contact {
+    background-color: #026fff;
+    color: white;
+    height: 150px;
+    display: flex;
+    align-self: center;
+    justify-content: space-between;
+}
+
+.form-email input {
+    border-color: gray;
+    border-style: solid;
+    border-radius: 5px;
+    padding: 8px 20px 8px 30px;
+    background-image: url(../img/envelope.svg);
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: 5px;
+}
+
+.form-email button {
+    display: block;
+    margin-top: 10px;
+    background: transparent;
+    color: white;
+    padding: 5px 0;
+    margin-top: 10px;
+    width: 100px;
+    border-radius: 5px;
+}
+
+.social-link {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-size: 50px;
+    margin: 0 10px;
+}
+
+.social-link.facebook {
+    background-image: url(../img/facebook.svg);
+}
+
+.social-link.instagram {
+    background-image: url(../img/instagram.svg);
+}
+
+.social-link.github {
+    background-image: url(../img/github.svg);
+}
+
+.footer {
+    color: yellow;
+    background-color: #08022B;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.footer img{
+    vertical-align: middle;
+}
+
+.footer strong {
+    font-style: italic
+}
+
+.wrapper {
+    width: 1000px;
+    margin: 0 auto;
+    display: inherit;
+    height: inherit;
+    justify-content: inherit;
+    flex-wrap: inherit;
+}
