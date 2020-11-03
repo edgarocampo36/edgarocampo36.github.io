@@ -103,18 +103,18 @@ h1 {
 }
 
 h1 strong {
-  color: #026fff;
+  color: #1e081d;
 }
 
 .hero {
-  background: #08022b;
+  background: #4975b0;
   padding-bottom: 20px;
 }
 
 .hero-title {
   height: 350px;
   /* background-image: url('../img/logo.jpg'); */
-  background-color: #08022b;
+  background-color: #4975b0;
   /* background-size: 263px; */
   /* background-repeat: no-repeat;
     background-position-x: right; */
@@ -126,6 +126,7 @@ h1 strong {
 
 .hero-image {
   object-fit: cover;
+  filter: opacity(80%) blur(1px);
 }
 
 .hero-description {
@@ -137,7 +138,7 @@ h1 strong {
   border-radius: 10px;
   background: white;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 1.3em;
   padding: 0 20px;
 }
 
@@ -149,7 +150,7 @@ h2 {
   color: #1e081d;
   text-transform: uppercase;
   font-family: "Titan One", cursive;
-  font-size: 33px;
+  font-size: 2em;
   margin: 0;
   padding-top: 30px;
   padding-bottom: 30px;
@@ -341,6 +342,26 @@ h2 {
   .container {
     padding: 0 1em;
   }
+  .hero .container {
+    padding: 0;
+  }
+  .hero-title {
+    height: auto;
+    position: relative;
+    padding: 2em;
+    overflow: hidden;
+  }
+  .hero-image {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+  h1 {
+    font-size: 2.5em;
+    z-index: 2;
+  }
 }
 @media screen and (max-width: 767px) {
   .header {
@@ -359,6 +380,15 @@ h2 {
   .header .logo {
     text-align: center;
   }
+  h1 {
+    font-size: 2em;
+  }
+  .hero-description-text {
+    font-size: 1.1em;
+  }
+  .hero-description-text p {
+    margin: 1em 0;
+  }
   .project {
     display: block;
   }
@@ -373,7 +403,7 @@ h2 {
   }
   .project-title {
     font-size: 1.5em;
-    margin-bottom: .3em;
+    margin-bottom: 0.3em;
   }
   .project-url {
     font-size: 1em;
@@ -385,10 +415,12 @@ h2 {
     font-size: 1em;
   }
   .project-description {
-    font-size: .8em;
+    font-size: 0.8em;
   }
-  .project-date, .project-course, .project-url {
-    margin: .3em 0;
+  .project-date,
+  .project-course,
+  .project-url {
+    margin: 0.3em 0;
   }
   .personal {
     width: auto;
@@ -396,6 +428,8 @@ h2 {
   }
   h2 {
     text-align: center;
+    font-size: 1.8em;
+    padding: 1em 0;
   }
   .h2-list {
     margin: 0;
@@ -406,7 +440,7 @@ h2 {
     font-size: 16px;
   }
   .personal-details {
-    margin: -2em .5em .5em;
+    margin: -2em 0.5em 0.5em;
     padding: 1em;
   }
   .contact {
@@ -418,8 +452,17 @@ h2 {
   .form-email button {
     margin: 1em auto;
   }
+  h1 {
+    font-size: 1.8em;
+  }
+  h2 {
+    font-size: 1.5em;
+  }
   h3 {
-    margin: .5em 0
+    margin: 0.5em 0;
+  }
+  .hero-description-text {
+    font-size: 0.9em;
   }
   .footer {
     display: block;
@@ -430,5 +473,16 @@ h2 {
 @media screen and (max-width: 320px) {
   .project-details {
     font-size: 12px;
+  }
+  h1 {
+    font-size: 1.5em;
+    text-align: center;
+  }
+  h2 {
+    font-size: 1.4em;
+    padding: 1em 0;
+  }
+  .hero-description-text {
+    font-size: 0.7em;
   }
 }
